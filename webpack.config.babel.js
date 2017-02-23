@@ -42,6 +42,7 @@ const config = {
 if (!ISPROD) {
     config.entry = {
         "basic": path.resolve(__dirname, 'example/basic.jsx'),
+        "router": path.resolve(__dirname, 'example/router.jsx')
     };
     config.output = {
         path: path.resolve(__dirname, 'dist'),
