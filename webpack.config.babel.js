@@ -41,8 +41,8 @@ const config = {
 // 开发环境配置
 if (!ISPROD) {
     config.entry = {
-        "basic": path.resolve(__dirname, 'example/basic.jsx'),
-        "router": path.resolve(__dirname, 'example/router.jsx')
+        "basic": path.resolve(__dirname, 'examples/basic.jsx'),
+        "router": path.resolve(__dirname, 'examples/router.jsx')
     };
     config.output = {
         path: path.resolve(__dirname, 'dist'),
