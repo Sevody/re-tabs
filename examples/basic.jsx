@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Tabs, { TabPane } from '../index';
+import Tabs, { TabPane } from '../';
 
 class Basic extends Component {
     constructor(props) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import Tabs, { TabPane }  from '../index';
+import Tabs, { TabPane }  from '../';
 
 export class App extends Component {
     componentWillMount() {
