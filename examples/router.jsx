@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import Tabs, { TabPane }  from '../index.js';
+import Tabs, { TabPane }  from 're-tabs';
 
 export class App extends Component {
     componentWillMount() {
@@ -47,11 +47,31 @@ export class App extends Component {
 }
 
 function Page1() {
-    return <div>page1</div>;
+    return (
+        <div>
+            <div>page1</div>
+            <div>page1</div>
+            <div>page1</div>
+            <div>page1</div>
+            <div>page1</div>
+            <div>page1</div>
+            <div>page1</div>
+        </div>
+    );
 }
 
 function Page2() {
-    return <div>page2</div>;
+    return (
+        <div>
+            <div>page2</div>
+            <div>page2</div>
+            <div>page2</div>
+            <div>page2</div>
+            <div>page2</div>
+            <div>page2</div>
+            <div>page2</div>
+        </div>
+    )
 }
 
 ReactDOM.render(<Router history={hashHistory}>

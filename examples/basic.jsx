@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Tabs, { TabPane } from '../index';
+import Tabs, { TabPane } from 're-tabs';
 
 class Basic extends Component {
     constructor(props) {
@@ -11,7 +11,9 @@ class Basic extends Component {
         this.onChange = this.onChange.bind(this);
     }
     onChange(key) {
-        this.setState({activeKey: key});
+        this.setState({
+            activeKey: key,
+        });
     }
     render() {
         const tabs = [
@@ -22,8 +24,8 @@ class Basic extends Component {
             {
                 value: 'tab2',
                 key: 'tab2',
-            }
-        ]
+            },
+        ];
         return (
             <Tabs navs={tabs} activeKey={this.state.activeKey} onChange={this.onChange}>
                 <TabPane key="tab1">
