@@ -8,8 +8,8 @@ const propTypes = {
     ]),
     children: PropTypes.node.isRequired,
     navs: PropTypes.arrayOf(PropTypes.shape({
-        value: React.PropTypes.string,
-        key: React.PropTypes.oneOfType([
+        value: PropTypes.string,
+        key: PropTypes.oneOfType([
             PropTypes.number,
             PropTypes.string,
         ]),
